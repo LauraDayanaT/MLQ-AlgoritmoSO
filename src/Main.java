@@ -5,7 +5,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        String archivo = args.length > 0 ? args[0] : "mlq001.txt";
+        String archivo = args.length > 0 ? args[0] : "mlq007.txt";
         try {
             List<Proceso> lista = Archivo.leerProcesos(archivo);
             MLQScheduler scheduler = new MLQScheduler(lista);
